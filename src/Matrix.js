@@ -14,6 +14,7 @@ export default class Matrix extends Component {
     return (
       <div id="matrix">
         {this.genMatrix()}
+        <Cell value={val} />
       </div>
     )
   }
