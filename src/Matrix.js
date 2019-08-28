@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Matrix extends Component {
   
   genRow = (vals) => (
-    vals.map(val => <div className="cell"></div>) // replace me and render a cell component instead!
+    <Cell value={val} />
   )
   
   genMatrix = () => (
@@ -14,7 +14,7 @@ export default class Matrix extends Component {
     return (
       <div id="matrix">
         {this.genMatrix()}
-        <Cell value={val} />
+        
       </div>
     )
   }
